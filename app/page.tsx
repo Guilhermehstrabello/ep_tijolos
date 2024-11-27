@@ -152,12 +152,12 @@ export default function Home() {
         <span className="absolute inset-0 bg-[#FF5F01] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
       </a>
 
-      <section className="lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 md:space-y-12 space-y-12 px-4 flex flex-col items-start py-10 justify-center lg:justify-center">
+      <section className="lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 md:space-y-12 space-y-12 px-4 flex flex-col items-center py-10 justify-center lg:justify-center">
         <div className="flex flex-col xl:space-y-10 space-y-4">
           <p className="text-base text-[#FF701C] xl:w-full w-80 my-10">Trabalhamos com a satisfação de nossos clientes</p>
           <h2 className="text-4xl font-semibold w-full">Produtos e Entregas de Qualidade = Cliente Feliz</h2>
         </div>
-        <div className="flex flex-col lg:flex-row md:flex-row justify-between gap-x-36 gap-y-10 mx-auto lg:mx-0">
+        <div className="grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 xl:grid justify-center items-center gap-x-36 space-y-10 lg:mx-0">
           <img src="/dep1.png" className="w-full" alt="Construtor" />
           <img src="/dep2.png" className="w-full" alt="Construtor" />
           <img src="/dep3.png" className="w-full" alt="Construtor" />
@@ -180,10 +180,10 @@ export default function Home() {
       </a>
       </section>
 
-      <section className="bg-[#FF701C] lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
+      <section className="bg-[#FF701C] w-full h-auto gap-y-10 lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
         <div className="flex flex-col gap-y-4">
           <img src="Logo_branca.png" className="w-fit" alt="Logo Ep Tijolos branca" />
-          <p className="xl:w-[540px] w-[240px] text-white">Nós da EP Tijolos fornecemos uma qualidade inegualável em nossos produtos e serviços, fazemos de tudo para atender a sua demanda e entregar qualidade em primeiro lugar. Entre em contato conosco.</p>
+          <p className="xl:w-[540px] w-[343px] text-white">Nós da EP Tijolos fornecemos uma qualidade inegualável em nossos produtos e serviços, fazemos de tudo para atender a sua demanda e entregar qualidade em primeiro lugar. Entre em contato conosco.</p>
           <div className="flex flex-row gap-x-10">
             <a href="https://www.instagram.com/eptijolos/" target="_blank">
               <img src="/instagram.svg" className="w-10" alt="Logo Instagram" />
@@ -193,7 +193,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-start gap-y-4 lg:px-64  text-white">
+        <div className="flex flex-col items-start gap-y-4 lg:px-64 text-white">
           <h2 className="text-3xl font-semibold">Contato</h2>
             <a href="" className="flex flex-row gap-x-2 hover:scale-125 duration-100">
               <img src="/tel.svg" alt="Logo de telefone" />
@@ -201,19 +201,19 @@ export default function Home() {
             </a>
             <a href="" className="flex flex-row gap-x-2 hover:scale-110 duration-150">
               <img src="/loc.svg" alt="Logo de telefone" />
-              <p className="text-xl">R. Euríco Dutra, 93 - Jardim Niero, Louveira - SP, 13290-000</p>
+              <p className="text-lg">R. Euríco Dutra, 93 - Jardim Niero, Louveira - SP, 13290-000</p>
             </a>
         </div>
       </section>
 
-      <div className="fixed xl:bottom-6 xl:right-24 2xl:right-16 bottom-4 right-4">
+      <div className="fixed xl:bottom-6 xl:right-24 2xl:right-10 bottom-4 right-10">
         <a
           aria-label="Tire suas dúvidas ou compre pelo whatsapp"
           target="_blank"
           href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
         >
           <button
-            className="bg-[#16B500] hover:bg-[#FF5F01] hover:scale-110 duration-150 transition text-white py-3 px-3 rounded-full shadow-lg"
+            className="bg-[#16B500] hover:bg-[#1d5a17] hover:scale-110 duration-150 transition text-white py-3 px-3 rounded-full shadow-lg"
             aria-label="Whatsapp Flutuante"
           >
             <Image
