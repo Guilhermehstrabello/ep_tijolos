@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
-import Accordion from "./components/accordion";
 
 export default function Home() {
 
   return (
     <>
       <Navbar />
-      <section className="h-[650px] flex lg:w-full w-auto bg-cover bg-no-repeat bg-[url('/background.png')] ">
+      <section id="inicio" className="h-[650px] flex lg:w-full w-auto bg-cover bg-no-repeat bg-[url('/background.png')] ">
         <div className="flex flex-col md:px-28 px-2 md:items-start 2xl:items-start 2xl:mx-0 md:justify-center xl:justify-center xl:items-center lg:mx-auto items-center justify-center space-y-10">
           <h1 className="text-white md:text-5xl 2xl:text-5xl 2xl:text-left text-center text-[34px] md:text-center 2xl:leading-relaxed"> <span className="font-bold text-[#FF5F01]">Tijolo Baiano e Estrutural de Qualidade! </span> <br /> Entrega Rápida e Qualidade Imbatível!</h1>
 
@@ -165,19 +164,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#FF701C] h-[380px] flex flex-col items-center max-w-[1140px] justify-center mx-auto mt-24 mb-20 gap-y-10 py-6 rounded-lg">
+      <section id="contato" className="bg-[#FF701C] h-[380px] flex flex-col items-center max-w-[1140px] justify-center mx-auto mt-24 mb-20 gap-y-10 py-6 rounded-lg">
         <h2 className="text-white text-4xl font-bold text-center">Ainda ficou com alguma dúvida?</h2>
         <h3 className="text-white text-xl text-center">Clique no botão abaixo e entre em contato conosco</h3>
         <a
-        href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
-        target="_blank"
-        className="relative overflow-hidden bg-[#16B500] text-white mx-auto z-10 px-4 py-4 text-xl text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-64"
-      >
-        Entre em Contato
-        <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
-          →
-        </span>
-      </a>
+          href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
+          target="_blank"
+          className="relative overflow-hidden bg-[#16B500] text-white mx-auto z-10 px-4 py-4 text-xl text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-64"
+        >
+          Entre em Contato
+          <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+            →
+          </span>
+        </a>
       </section>
 
       <section className="bg-[#FF701C] w-full h-auto gap-y-10 lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
@@ -195,16 +194,20 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-start gap-y-4 lg:px-64 text-white">
           <h2 className="text-3xl font-semibold">Contato</h2>
-            <a href="" className="flex flex-row gap-x-2 hover:scale-125 duration-100">
-              <img src="/tel.svg" alt="Logo de telefone" />
-              <p className="text-xl">(19) 99774-1685</p>
-            </a>
-            <a href="" className="flex flex-row gap-x-2 hover:scale-110 duration-150">
-              <img src="/loc.svg" alt="Logo de telefone" />
-              <p className="text-lg">R. Euríco Dutra, 93 - Jardim Niero, Louveira - SP, 13290-000</p>
-            </a>
+          <a href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!" target="_blank" className="flex flex-row gap-x-2 hover:scale-125 duration-100">
+            <img src="/tel.svg" alt="Logo de telefone" />
+            <p className="text-xl">(19) 99774-1685</p>
+          </a>
+          <a href="https://www.google.com/maps/place/EP+Tijolos/@-23.0808071,-46.9507052,15z/data=!4m2!3m1!1s0x0:0xf3e43370b5062e33?sa=X&ved=1t:2428&ictx=111" target="_blank" className="flex flex-row gap-x-2 hover:scale-110 duration-150">
+            <img src="/loc.svg" alt="Logo de telefone" />
+            <p className="text-lg">R. Euríco Dutra, 93 - Jardim Niero, Louveira - SP, 13290-000</p>
+          </a>
         </div>
       </section>
+
+      <div className="bg-[#FF701C] w-full mx-auto text-center py-10">
+        <p className="text-white text-xl">© 2024 EP Tijolos | Blocos de Excelência. Todos Direitos Reservados. Desenvolvido por <a href="www.constemarketing.com.br" target="_blank" className="text-[#1e1e1e] font-semibold hover:text-2xl duration-150">Conste Marketing.</a></p>
+      </div>
 
       <div className="fixed xl:bottom-6 xl:right-24 2xl:right-10 bottom-4 right-10">
         <a
