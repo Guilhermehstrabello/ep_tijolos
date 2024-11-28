@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <GoogleTagManager gtmId="GTM-NLKZJPBR" />
       <body className={redHatDisplay.className}>
         {children}
       </body>

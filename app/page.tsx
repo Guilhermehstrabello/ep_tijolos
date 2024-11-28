@@ -6,27 +6,42 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section id="inicio" className="h-[650px] flex lg:w-full w-auto bg-cover bg-no-repeat bg-[url('/background.png')] ">
-        <div className="flex flex-col md:px-28 px-2 md:items-start 2xl:items-start 2xl:mx-0 md:justify-center xl:justify-center xl:items-center lg:mx-auto items-center justify-center space-y-10">
-          <h1 className="text-white md:text-5xl 2xl:text-5xl 2xl:text-left text-center text-[34px] md:text-center 2xl:leading-relaxed"> <span className="font-bold text-[#FF5F01]">Tijolo Baiano e Estrutural de Qualidade! </span> <br /> Entrega Rápida e Qualidade Imbatível!</h1>
-
-          <p className="text-white md:w-full w-80 2xl:w-full md:text-lg text-base 2xl:text-left md:text-center text-center"> <span className="font-bold">Tijolo Baiano, Tijolo Estrutural, Tijolo de Barro </span> e muito mais: Tudo em Primeira Linha. <br />
-            Garantimos Logística Rápida, Controle de Qualidade e um Atendimento Pós-Venda <br />
-            Premium para Manter sua Obra Sempre no Caminho do Sucesso!</p>
-
-          <a
-            href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
-            target="_blank"
-            className="relative overflow-hidden bg-[#16B500] text-white md:mx-auto 2xl:mx-0 xl:mx-auto z-10 px-4 py-4 text-xl text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-64"
-          >
-            Tenho interesse
-            <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
-              →
-            </span>
-            <span className="absolute inset-0 bg-[#FF5F01] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
-          </a>
-        </div>
-      </section>
+      <section id="inicio" className="relative h-[650px] flex lg:w-full w-auto">
+      {/* Background image */}
+      <Image
+        src="/background.png"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        priority={true} // Define a prioridade do carregamento
+        className="z-[-1]" // Coloca a imagem atrás do conteúdo
+      />
+      <div className="flex flex-col md:px-28 px-2 md:items-start 2xl:items-start 2xl:mx-0 md:justify-center xl:justify-center xl:items-center lg:mx-auto items-center justify-center space-y-10">
+        <h1 className="text-white md:text-5xl 2xl:text-5xl 2xl:text-left text-center text-[34px] md:text-center 2xl:leading-relaxed">
+          <span className="font-bold text-[#FF5F01]">Tijolo Baiano e Estrutural de Qualidade! </span>
+          <br />
+          Entrega Rápida e Qualidade Imbatível!
+        </h1>
+        <p className="text-white md:w-full w-80 2xl:w-full md:text-lg text-base 2xl:text-left md:text-center text-center">
+          <span className="font-bold">Tijolo Baiano, Tijolo Estrutural, Tijolo de Barro </span> e muito mais: Tudo em Primeira Linha.
+          <br />
+          Garantimos Logística Rápida, Controle de Qualidade e um Atendimento Pós-Venda
+          <br />
+          Premium para Manter sua Obra Sempre no Caminho do Sucesso!
+        </p>
+        <a
+          href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
+          target="_blank"
+          className="relative overflow-hidden bg-[#16B500] text-white md:mx-auto 2xl:mx-0 xl:mx-auto z-10 px-4 py-4 text-xl text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-64"
+        >
+          Tenho interesse
+          <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+            →
+          </span>
+          <span className="absolute inset-0 bg-[#FF5F01] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
+        </a>
+      </div>
+    </section>
 
       <section className="flex flex-col items-center py-20 gap-y-10">
         <h2 className="lg:text-[42px] text-3xl font-medium text-center w-[350px] lg:w-[560px]">
@@ -151,7 +166,7 @@ export default function Home() {
         <span className="absolute inset-0 bg-[#FF5F01] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
       </a>
 
-      <section className="lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 md:space-y-12 space-y-12 px-4 flex flex-col items-center py-10 justify-center lg:justify-center">
+      <section className="lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 md:space-y-12 space-y-12 px-4 flex flex-col lg:items-start items-center py-10 justify-center lg:justify-center">
         <div className="flex flex-col xl:space-y-10 space-y-4">
           <p className="text-base text-[#FF701C] xl:w-full w-80 my-10">Trabalhamos com a satisfação de nossos clientes</p>
           <h2 className="text-4xl font-semibold w-full">Produtos e Entregas de Qualidade = Cliente Feliz</h2>
