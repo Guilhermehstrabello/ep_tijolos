@@ -70,7 +70,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="bg-white flex flex-col items-center py-10 gap-y-10">
+      <section id="produtos" className="bg-white flex flex-col items-center py-10 gap-y-10">
         <h2 className="lg:text-[42px] text-3xl font-medium text-center lg:w-[560px] w-[350px]">
           Nossos Melhores <span className="text-[#FF5F01]">Produtos</span>
         </h2>
@@ -129,7 +129,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="bg-[#FF701C] lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
+      <section id="sobre" className="bg-[#FF701C] lg:w-full md:w-full w-full h-auto lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
         <div className="flex flex-col gap-y-4">
           <p className="text-base text-[#1e1e1e] lg:w-full w-80">Nossos Clientes São Prioridade</p>
           <h2 className="text-white lg:text-[36px] text-4xl font-medium text-left">
@@ -226,25 +226,50 @@ export default function Home() {
 
       <section className="bg-[#FF701C] w-full h-auto gap-y-10 lg:px-28 md:px-10 px-4 flex lg:flex-row flex-col items-center py-10 justify-center lg:justify-between">
         <div className="flex flex-col gap-y-4">
-          <img src="Logo_branca.png" className="w-fit" alt="Logo Ep Tijolos branca" />
+          <Image
+            src="/Logo_branca.png"
+            alt="Logo Ep Tijolos branca"
+            width={150}
+            height={80}
+          />
           <p className="xl:w-[540px] w-[343px] text-white">Nós da EP Tijolos fornecemos uma qualidade inegualável em nossos produtos e serviços, fazemos de tudo para atender a sua demanda e entregar qualidade em primeiro lugar. Entre em contato conosco.</p>
           <div className="flex flex-row gap-x-10">
             <a href="https://www.instagram.com/eptijolos/" target="_blank">
-              <img src="/instagram.svg" className="w-10" alt="Logo Instagram" />
+              <Image
+                src="/instagram.svg"
+                alt="Logo Instagram"
+                width={40}
+                height={40}
+              />
             </a>
             <a href="https://www.facebook.com/p/EP-tijolos-100065088606627/" target="_blank">
-              <img src="/facebook.svg" className="w-10" alt="Logo Facebook" />
+              <Image
+                src="/facebook.svg"
+                alt="Logo Facebook"
+                width={40}
+                height={40}
+              />
             </a>
           </div>
         </div>
         <div className="flex flex-col items-start gap-y-4 lg:px-64 text-white">
           <h2 className="text-3xl font-semibold">Contato</h2>
           <a href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!" target="_blank" className="flex flex-row gap-x-2 hover:scale-125 duration-100">
-            <img src="/tel.svg" alt="Logo de telefone" />
+            <Image
+              src="/tel.svg"
+              alt="Logo de telefone"
+              width={24}
+              height={28}
+            />
             <p className="text-xl">(19) 99774-1685</p>
           </a>
           <a href="https://www.google.com/maps/place/EP+Tijolos/@-23.0808071,-46.9507052,15z/data=!4m2!3m1!1s0x0:0xf3e43370b5062e33?sa=X&ved=1t:2428&ictx=111" target="_blank" className="flex flex-row gap-x-2 hover:scale-110 duration-150">
-            <img src="/loc.svg" alt="  de telefone" />
+            <Image
+              src="/loc.svg"
+              alt="Localização"
+              width={24}
+              height={56}
+            />
             <p className="text-lg">R. Euríco Dutra, 93 - Jardim Niero, Louveira - SP, 13290-000</p>
           </a>
         </div>
