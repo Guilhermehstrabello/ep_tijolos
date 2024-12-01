@@ -55,7 +55,7 @@ export default function Navbar() {
       {/* Botão de Comprar */}
       <div className="hidden md:block">
         <a
-          href="https://wa.me/5519998088587?text=Ol%C3%A1.%20Quero%20elevar%20o%20n%C3%ADvel%20da%20minha%20constru%C3%A7%C3%A3o!"
+          href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
           target="_blank"
           className="relative overflow-hidden bg-[#FF5F01] mx-auto text-white z-10 px-4 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[140px]"
         >
@@ -68,8 +68,8 @@ export default function Navbar() {
       </div>
 
       {/* Menu hambúrguer para mobile */}
-      <div className="md:hidden flex items-center">
-        <button onClick={toggleMenu} className="focus:outline-none">
+      <div className="md:hidden flex items-center z-10">
+        <button onClick={toggleMenu} className="focus:outline-none" aria-label="MenuHamburguer">
           <svg
             className="w-8 h-8"
             fill="none"
@@ -89,7 +89,7 @@ export default function Navbar() {
 
       {/* Menu dropdown mobile */}
       {isOpen && (
-        <ul className="absolute top-44 left-0 w-full bg-[#f2f2f2] text-center space-y-6 py-10 md:hidden">
+        <ul className="absolute top-44 left-0 w-full bg-[#f2f2f2] text-center space-y-6 py-10 md:hidden z-10">
           <li>
             <Link
               href="#inicio"
@@ -108,18 +108,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#diferenciais"
+              href="#sobre"
               className="block hover:text-[#FF6600] transition duration-150"
             >
-              Diferenciais
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#depoimentos"
-              className="block hover:text-[#FF6600] transition duration-150"
-            >
-              Depoimentos
+              Sobre
             </Link>
           </li>
           <li>
@@ -132,7 +124,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="https://wa.me/5519998088587?text=Ol%C3%A1.%20Quero%20elevar%20o%20n%C3%ADvel%20da%20minha%20constru%C3%A7%C3%A3o!"
+              href="https://api.whatsapp.com/send?phone=5519997741685&text=Ol%C3%A1.%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20tijolos!"
               target="_blank"
               className="relative overflow-hidden bg-[#FF5F01] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]"
             >
